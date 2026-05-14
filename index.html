@@ -57,10 +57,27 @@ nav a {
     justify-content: center;
     text-align: center;
 }
-.hero h1 {
-    font-size: 60px;
-    background: rgba(0,0,0,0.7);
-    padding: 20px;
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.hero-logo {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+
+  /* makes it pop over the hero background */
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.6));
+
+  /* optional animation */
+  transition: transform 0.3s ease;
+}
+
+.hero-logo:hover {
+  transform: scale(1.02);
 }
 
 /* SECTION */
@@ -131,7 +148,7 @@ footer {
 <section class="hero" id="home">
      <div class="hero-content">
     <img 
-      src="assets/sox_site_title_logo.png"
+      src="sox_site_title_logo.png"
       alt="Biglerville Black Sox"
       class="hero-logo"
     >
